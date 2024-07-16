@@ -1,0 +1,15 @@
+body{
+    overflow-x: hidden;
+}
+header.fixed-header{
+    position: relative;
+}
+.custom-row .content-col{
+    margin-top: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .banner-contain {
+        height: 450px;
+    }
+  }
