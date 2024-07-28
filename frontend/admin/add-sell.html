@@ -46,10 +46,6 @@
 
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-    <!-- custom css  -->
-     <link rel="stylesheet" href="./assets/css/custom/custom.css">
-
 </head>
 
 <body>
@@ -295,7 +291,7 @@
                                             <a href="currency-rates.html">POS</a>
                                         </li>
                                         <li>
-                                            <a href="currency-rates.html">Add sale</a>
+                                            <a href="add-sell.html">Add sale</a>
                                         </li>
                                         <li>
                                             <a href="currency-rates.html">Gift Card List</a>
@@ -444,54 +440,204 @@
 
             <!-- Container-fluid starts-->
             <div class="page-body">
+                
+                <!-- New Product Add Start -->
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="card card-table">
-                                <div class="card-body">
-                                    <div class="title-header option-title d-sm-flex d-block">
-                                        <h5>Purchase List</h5>
-                                    </div>
-                                    <div>
-                                        <div class="table-responsive">
-                                            <table class="table all-package theme-table table-product" id="table_id">
-                                                <thead>
-                                                    <tr class="purchase-table-head">
-                                                        <th class="purchase-table-text purchase-table-head">Product Details</th>
-                                                        <th class="purchase-table-text purchase-table-head">Unit</th>
-                                                        <th class="purchase-table-text purchase-table-head">Status</th>
-                                                    </tr>
-                                                </thead>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-8 col-md-12 m-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-header-2">
+                                                <h5>Add Sale</h5>
+                                            </div>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="text-start one-col">
-                                                                <h4 class="fs-6 purchase-table-text">Aata Buscuit Aata Buscuit</h4>
-                                                                <span class="d-flex flex-column flex-md-row text-start">
-                                                                    <p class="purchase-table-details mb-0">12/12/2024</p>
-                                                                    <p class="ps-md-2 purchase-table-details text-start">Category</p>
-                                                                </span>
-                                                            </div>
-                                                        </td>
+                                            <form class="theme-form theme-form-2 mega-form">
 
-                                                        <td >
-                                                            <div  class="sec-col d-flex flex-column flex-md-row justify-content-center align-items-center w-full h-full">
-                                                                <h4 class="td-price mx-md-4 mx-2 fs-6 purchase-table-text">$95.97</h4>
-                                                                <span class="text-start ">
-                                                                    <p class="mb-0 purchase-table-details">Quantity <span>12</span></p>
-                                                                    <p class="purchase-table-details">Due <span class="ps-2">120</span></p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
+                                                <div class="d-flex row">
+                                                    <div class="mb-4 col-md-4 col-sm-12 align-items-center">
+                                                        <label
+                                                            class="col-form-label form-label-title">Customer*</label>
+                                                        <div class="col-md-9 col-lg-10">
+                                                            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                                                <option selected>Open this select menu</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                              </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4 col-md-4 col-sm-12 align-items-center">
+                                                        <label
+                                                            class="col-form-label form-label-title">WareHouse*</label>                                                                                   </label>
+                                                        <div class="col-md-9 col-lg-10">
+                                                            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                                                <option selected>Open this select menu</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                              </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4 col-md-4 col-sm-12 align-items-center">
+                                                        <label
+                                                            class="col-form-label form-label-title">Biller*</label>
+                                                        <div class="col-md-9 col-lg-10">
+                                                            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                                                <option selected>Open this select menu</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                              </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                                        <td class="status-danger">
-                                                            <span>Pending</span>
-                                                        </td>
+                                                <div class="col-md-6 mb-4">
+                                                    <h4 class="pb-3">Select Product *</h2>
+                                                        <div class="search-box input-group">
+                                                            <button class="btn btn-secondary btn-lg"><i
+                                                                    class="fa fa-barcode"></i></button>
+                                                            <input type="text"
+                                                                placeholder="Please type product code and select..."
+                                                                class="form-control ui-autocomplete-input">
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <h5>Order Table *</h5>
+                                                    <div class="table-responsive mt-3">
+                                                        <table id="myTable" class="table table-hover order-list border-0">
+                                                            <thead >
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Code</th>
+                                                                    <th>Quantity</th>
+                                                                    <th>Net Unit Price</th>
+                                                                    <th>Discount</th>
+                                                                    <th>Tax</th>
+                                                                    <th>SubTotal</th>
+                                                                    <th><i class="dripicons-trash"></i></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            </tbody>
+                                                            <tfoot class="tfoot active">
+                                                                <tr><th colspan="2">Total</th>
+                                                                <th id="total-qty">0</th>
+                                                                <th></th>
+                                                                <th id="total-discount">0.00</th>
+                                                                <th id="total-tax">0.00</th>
+                                                                <th id="total">0.00</th>
+                                                                <th><i class="dripicons-trash"></i></th>
+                                                            </tr></tfoot>
+                                                        </table>
+                                                    </div>
+                                                </div>
 
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Order Tax</label>
+                                                            <div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-default btn-light" data-toggle="dropdown" role="button" title="No Tax"><span class="filter-option pull-left">No Tax</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="0"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true"><span class="text">No Tax</span><span class="fa fa-check check-mark"></span></span></a><a tabindex="0" class="dropdown-item" data-original-index="1"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="false"><span class="text">vat 10%</span><span class="fa fa-check check-mark"></span></span></a><a tabindex="0" class="dropdown-item" data-original-index="2"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="false"><span class="text">vat 7.5%</span><span class="fa fa-check check-mark"></span></span></a><a tabindex="0" class="dropdown-item" data-original-index="3"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="false"><span class="text">vat 0%</span><span class="fa fa-check check-mark"></span></span></a></div></div><select class="form-control" name="order_tax_rate" tabindex="-98">
+                                                                <option value="0">No Tax</option>
+                                                                <option value="10">vat 10%</option>
+                                                                <option value="7.5">vat 7.5%</option>
+                                                                <option value="0">vat 0%</option>
+                                                            </select></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                <strong>Order Discount</strong>
+                                                            </label>
+                                                            <input type="number" name="order_discount" class="form-control" step="any">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                <strong>Shipping Cost</strong>
+                                                            </label>
+                                                            <input type="number" name="shipping_cost" class="form-control" step="any">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Attach Document</label> <i class="dripicons-question" data-toggle="tooltip" title="" data-original-title="Only jpg, jpeg, png, gif, pdf, csv, docx, xlsx and txt file is supported"></i>
+                                                            <input type="file" name="document" class="form-control">
+                                                                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Sale Status *</label>
+                                                            <div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-default btn-light" data-toggle="dropdown" role="button" title="Completed"><span class="filter-option pull-left">Completed</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="0"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true"><span class="text">Completed</span><span class="fa fa-check check-mark"></span></span></a><a tabindex="0" class="dropdown-item" data-original-index="1"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="false"><span class="text">Pending</span><span class="fa fa-check check-mark"></span></span></a></div></div><select name="sale_status" class="form-control" tabindex="-98">
+                                                                <option value="1">Completed</option>
+                                                                <option value="2">Pending</option>
+                                                            </select></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Payment Status *</label>
+                                                            <div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-default btn-light" data-toggle="dropdown" role="button" title="Pending"><span class="filter-option pull-left">Pending</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="0"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true"><span class="text">Pending</span><span class="fa fa-check check-mark"></span></span></a><a tabindex="0" class="dropdown-item" data-original-index="1"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="false"><span class="text">Due</span><span class="fa fa-check check-mark"></span></span></a><a tabindex="0" class="dropdown-item" data-original-index="2"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="false"><span class="text">Partial</span><span class="fa fa-check check-mark"></span></span></a><a tabindex="0" class="dropdown-item" data-original-index="3"><span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="false"><span class="text">Paid</span><span class="fa fa-check check-mark"></span></span></a></div></div><select name="payment_status" class="form-control" tabindex="-98">
+                                                                <option value="1">Pending</option>
+                                                                <option value="2">Due</option>
+                                                                <option value="3">Partial</option>
+                                                                <option value="4">Paid</option>
+                                                            </select></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-2">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Sale Note</label>
+                                                            <textarea rows="5" class="form-control" name="sale_note"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Staff Note</label>
+                                                            <textarea rows="5" class="form-control" name="staff_note"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group my-3">
+                                                    <input type="submit" value="Submit" class="btn btn-primary" id="submit-button">
+                                                </div>
+                                            </form>
+
+                                            <div class="mt-2">
+                                                <table class="table table-responsive table-bordered table-condensed totals">
+                                                    <tbody><tr><td><strong>Items</strong>
+                                                        <span class="pull-right" id="item">0.00</span>
+                                                    </td>
+                                                    <td><strong>Total</strong>
+                                                        <span class="pull-right" id="subtotal">0.00</span>
+                                                    </td>
+                                                    <td><strong>Order Tax</strong>
+                                                        <span class="pull-right" id="order_tax">0.00</span>
+                                                    </td>
+                                                    <td><strong>Order Discount</strong>
+                                                        <span class="pull-right" id="order_discount">0.00</span>
+                                                    </td>
+                                                    <td><strong>Shipping Cost</strong>
+                                                        <span class="pull-right" id="shipping_cost">0.00</span>
+                                                    </td>
+                                                    <td><strong>Grand Total</strong>
+                                                        <span class="pull-right" id="grand_total">0.00</span>
+                                                    </td>
+                                                </tr></tbody></table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -499,6 +645,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- New Product Add End -->
                 <!-- Container-fluid Ends-->
 
                 <div class="container-fluid">
@@ -506,7 +653,7 @@
                     <footer class="footer">
                         <div class="row">
                             <div class="col-md-12 footer-copyright text-center">
-                                <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
+                                <p class="mb-0">Copyright 2024 © lasiof</p>
                             </div>
                         </div>
                     </footer>

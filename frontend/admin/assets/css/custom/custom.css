@@ -4,3 +4,29 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
+
+@media only screen and (max-width: 576px) {
+    .purchase-table-details{
+        font-size: 8px;
+    }
+    .purchase-table-text{
+        font-size: 12px !important;
+        font-weight: 600;
+    }
+    .purchase-table-head{
+        padding-right: 1px !important;
+        padding-left: 1px !important;
+        min-width: 0px !important;
+    }
+    .one-col{
+        max-width: 132px;
+        overflow: hidden;
+    }
+    .sec-col{
+        max-width: 54px;
+        overflow: hidden;
+
+    }
+    
+  }
