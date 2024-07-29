@@ -12,7 +12,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>Fastkart - Create Coupon</title>
+    <title>Fastkart - Product</title>
 
     <!-- Google font-->
     <link
@@ -25,14 +25,17 @@
     <!-- Linear Icon css -->
     <link rel="stylesheet" href="assets/css/linearicon.css">
 
-    <!-- remixicon css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
-
-    <!-- Themify icon css-->
+    <!-- Themify icon css -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify.css">
 
     <!-- Feather icon css -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css">
+
+    <!-- remixicon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
+
+    <!-- Data Table css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
 
     <!-- Plugins css -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css">
@@ -46,11 +49,11 @@
 </head>
 
 <body>
-    <!-- tap on top start -->
+    <!-- tap on top start-->
     <div class="tap-top">
         <span class="lnr lnr-chevron-up"></span>
     </div>
-    <!-- tap on tap end -->
+    <!-- tap on tap end-->
 
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -72,21 +75,6 @@
                     </div>
                 </div>
 
-                <form class="form-inline search-full" action="javascript:void(0)" method="get">
-                    <div class="form-group w-100">
-                        <div class="Typeahead Typeahead--twitterUsers">
-                            <div class="u-posRelative">
-                                <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
-                                    placeholder="Search Fastkart .." name="q" title="" autofocus>
-                                <i class="close-search" data-feather="x"></i>
-                                <div class="spinner-border Typeahead-spinner" role="status">
-                                    <span class="sr-only">Loading...</span>
-                                </div>
-                            </div>
-                            <div class="Typeahead-menu"></div>
-                        </div>
-                    </div>
-                </form>
                 <div class="nav-right col-6 pull-right right-header p-0">
                     <ul class="nav-menus">
                         <li>
@@ -206,7 +194,7 @@
                     </div>
                     <div class="logo-icon-wrapper">
                         <a href="index.html">
-                            <img class="img-fluid main-logo main-white" src="assets/images/logo/1-white.png" alt="logo">
+                            <img class="img-fluid main-logo main-white" src="assets/images/logo/logo.png" alt="logo">
                             <img class="img-fluid main-logo main-dark" src="assets/images/logo/logo-white.png"
                                 alt="logo">
                         </a>
@@ -234,21 +222,12 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="products.html">Prodcts</a>
+                                            <a href="products.html">Products</a>
                                         </li>
 
                                         <li>
                                             <a href="add-new-product.html">Add New Products</a>
                                         </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-list-check-2"></i>
-                                        <span>Category</span>
-                                    </a>
-                                    <ul class="sidebar-submenu">
                                         <li>
                                             <a href="category.html">Category List</a>
                                         </li>
@@ -256,60 +235,105 @@
                                         <li>
                                             <a href="add-new-category.html">Add New Category</a>
                                         </li>
+                                        
+                                        <li>
+                                            <a href="print_barcode.html">Print Barcode</a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-list-settings-line"></i>
-                                        <span>Attributes</span>
-                                    </a>
-                                    <ul class="sidebar-submenu">
-                                        <li>
-                                            <a href="attributes.html">Attributes</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="add-new-attributes.html">Add Attributes</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-user-3-line"></i>
-                                        <span>Users</span>
-                                    </a>
-                                    <ul class="sidebar-submenu">
-                                        <li>
-                                            <a href="all-users.html">All users</a>
-                                        </li>
-                                        <li>
-                                            <a href="add-new-user.html">Add new user</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-user-3-line"></i>
-                                        <span>Roles</span>
-                                    </a>
-                                    <ul class="sidebar-submenu">
-                                        <li>
-                                            <a href="role.html">All roles</a>
-                                        </li>
-                                        <li>
-                                            <a href="create-role.html">Create Role</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="media.html">
+                                        
                                         <i class="ri-price-tag-3-line"></i>
-                                        <span>Media</span>
+                                        <span>Purchase</span>
                                     </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="purchases.html">Purchase List</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="purchase-add.html">Add Purchase</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                               
+
+                                
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-focus-3-line"></i>
+                                        <span>Sale</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="translation.html">Sale List</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="currency-rates.html">POS</a>
+                                        </li>
+                                        <li>
+                                            <a href="add-sell.html">Add sale</a>
+                                        </li>
+                                        <li>
+                                            <a href="currency-rates.html">Gift Card List</a>
+                                        </li>
+                                        <li>
+                                            <a href="currency-rates.html">Coupon Liat</a>
+                                        </li>
+                                        <li>
+                                            <a href="currency-rates.html">Delivery List</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-price-tag-3-line"></i>
+                                        <span>Expence</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="translation.html">Expence Category</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="currency-rates.html">Expence List</a>
+                                        </li>
+                                        <li>
+                                            <a href="currency-rates.html">Add Expence</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-star-line"></i>
+                                        <span>Accounting</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="coupon-list.html">Assets List</a>
+                                        </li>
+                                        <li>
+                                            <a href="coupon-list.html">Accounting List</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="create-coupon.html">Add Accounting</a>
+                                        </li>
+                                        <li>
+                                            <a href="create-coupon.html">Money Transfer</a>
+                                        </li>
+                                        <li>
+                                            <a href="create-coupon.html">Balance Statement</a>
+                                        </li>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li class="sidebar-list">
@@ -331,21 +355,25 @@
                                 </li>
 
                                 <li class="sidebar-list">
-                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-focus-3-line"></i>
-                                        <span>Localization</span>
+                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-user-3-line"></i>
+                                        <span>Users</span>
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="translation.html">Translation</a>
+                                            <a href="all-users.html">All users</a>
                                         </li>
-
                                         <li>
-                                            <a href="currency-rates.html">Currency Rates</a>
+                                            <a href="add-new-user.html">Add new user</a>
+                                        </li>
+                                        <li>
+                                            <a href="role.html">All roles</a>
+                                        </li>
+                                        <li>
+                                            <a href="create-role.html">Create Role</a>
                                         </li>
                                     </ul>
                                 </li>
-
                                 <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
                                         <i class="ri-price-tag-3-line"></i>
@@ -362,24 +390,11 @@
                                     </ul>
                                 </li>
 
+                                
                                 <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="taxes.html">
-                                        <i class="ri-price-tag-3-line"></i>
-                                        <span>Tax</span>
-                                    </a>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="product-review.html">
-                                        <i class="ri-star-line"></i>
-                                        <span>Product Review</span>
-                                    </a>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
-                                        <i class="ri-phone-line"></i>
-                                        <span>Support Ticket</span>
+                                    <a class="sidebar-link sidebar-title link-nav" href="reports.html">
+                                        <i class="ri-file-chart-line"></i>
+                                        <span>Reports</span>
                                     </a>
                                 </li>
 
@@ -395,19 +410,8 @@
                                     </ul>
                                 </li>
 
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="reports.html">
-                                        <i class="ri-file-chart-line"></i>
-                                        <span>Reports</span>
-                                    </a>
-                                </li>
+                                
 
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="list-page.html">
-                                        <i class="ri-list-check"></i>
-                                        <span>List Page</span>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
 
@@ -419,212 +423,79 @@
             </div>
             <!-- Page Sidebar Ends-->
 
-            <!-- Create Coupon Table start -->
+            <!-- Container-fluid starts-->
             <div class="page-body">
+                
+                <!-- New Product Add Start -->
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
                             <div class="row">
-                                <div class="col-sm-12">
+                                <div class="col-sm-8 col-md-12 m-auto">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="title-header option-title">
-                                                <h5>Create Coupon</h5>
+                                            <div class="col-md-1 col-3">
+                                                <a href="#" class="btn btn-info">Add Coupon</a>
                                             </div>
-                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="pills-home-tab"
-                                                        data-bs-toggle="pill" data-bs-target="#pills-home"
-                                                        type="button">General</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="pills-profile-tab"
-                                                        data-bs-toggle="pill" data-bs-target="#pills-profile"
-                                                        type="button">Restriction</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="pills-usage-tab" data-bs-toggle="pill"
-                                                        data-bs-target="#pills-usage" type="button">Usage</button>
-                                                </li>
-                                            </ul>
 
-                                            <div class="tab-content" id="pills-tabContent">
-                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
-                                                    <form class="theme-form theme-form-2 mega-form">
-                                                        <div class="card-header-1">
-                                                            <h5>General</h5>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Coupon
-                                                                    Title</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="text">
+                                            <div class="table-responsive mt-4">
+                                                <table id="coupon-table" class="table dataTable dtr-inline w-100" role="grid" aria-describedby="coupon-table_info" style="width: 0px;">
+                                                    <thead>
+                                                        <tr role="row">
+                                                            <th class="not-exported dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" data-col="0" aria-label="">
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" class="dt-checkboxes">
+                                                                    <label></label>
                                                                 </div>
-                                                            </div>
-
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Coupon
-                                                                    Code</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="number">
+                                                            </th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Coupon Code: activate to sort column ascending">Coupon Code</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Type: activate to sort column ascending">Type</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Amount: activate to sort column ascending">Amount</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Minimum Amount: activate to sort column ascending">Minimum Amount</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Qty: activate to sort column ascending">Qty</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Available: activate to sort column ascending">Available</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Expired Date: activate to sort column ascending">Expired Date</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Created By: activate to sort column ascending">Created By</th>
+                                                            <th class="not-exported sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label="Action">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                
+                                                    <tbody>
+                                                                                    
+                                                        <tr data-id="3" role="row" class="odd">
+                                                            <td class="dt-checkboxes-cell" tabindex="0">
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" class="dt-checkboxes">
+                                                                    <label></label>
                                                                 </div>
-                                                            </div>
-
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Start
-                                                                    Date</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="date">
+                                                            </td>
+                                                            <td>5%</td>
+                                                            <td><div class="badge badge-primary">percentage</div></td>
+                                                            <td>5</td>
+                                                            <td>N/A</td>
+                                                            <td>500</td>
+                                                            <td class="text-center"><div class="badge badge-success">492</div></td>
+                                                            <td><div class="badge badge-danger">31-12-2022</div></td>
+                                                            <td>riaz</td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action
+                                                                        <span class="caret"></span>
+                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default" user="menu">
+                                                                        <li><button type="button" data-id="3" data-code="5%" data-type="percentage" data-amount="5" data-minimum_amount="0" data-quantity="500" data-expired_date="2022-12-31" class="edit-btn btn btn-link" data-toggle="modal" data-target="#editModal"><i class="dripicons-document-edit"></i> Edit</button></li>
+                                                                        <form method="POST" action="" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="E6lVWjGlxpQp55F3aHXc80CJ80swWhDA6ASi5PFi">
+                                                                        <li>
+                                                                            <button type="submit" class="btn btn-link" onclick="return confirmDelete()"><i class="dripicons-trash"></i> Delete</button>
+                                                                        </li>
+                                                                        </form>
+                                                                    </ul>
                                                                 </div>
-                                                            </div>
-
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">End
-                                                                    Date</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="date">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Free
-                                                                    Shipping</label>
-                                                                <div class="col-md-9">
-                                                                    <div class="form-check user-checkbox ps-0">
-                                                                        <input class="checkbox_animated check-it"
-                                                                            type="checkbox" value=""
-                                                                            id="flexCheckDefault">
-                                                                        <label
-                                                                            class="form-label-title col-md-2 mb-0">Allow
-                                                                            Free Shipping</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Quantity</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="number">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="col-sm-2 col-form-label form-label-title">Discount
-                                                                    Type</label>
-                                                                <div class="col-sm-10">
-                                                                    <select class="js-example-basic-single"
-                                                                        name="state">
-                                                                        <option disabled>--Select--</option>
-                                                                        <option>Percent</option>
-                                                                        <option>Fixed</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="row align-items-center">
-                                                                <label
-                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Status</label>
-                                                                <div class="col-md-9">
-                                                                    <div class="form-check user-checkbox ps-0">
-                                                                        <input class="checkbox_animated check-it"
-                                                                            type="checkbox" value=""
-                                                                            id="flexCheckDefault1">
-                                                                        <label class="form-label-title col-md-2 mb-0">
-                                                                            Enable the Coupon</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-                                                    <form class="theme-form theme-form-2 mega-form">
-                                                        <div class="card-header-1">
-                                                            <h5>Restriction</h5>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Products</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="text">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="col-sm-2 col-form-label form-label-title">Category</label>
-                                                                <div class="col-sm-10">
-                                                                    <select class="js-example-basic-single"
-                                                                        name="state">
-                                                                        <option disabled>--Select--</option>
-                                                                        <option>Electronics</option>
-                                                                        <option>Clothes</option>
-                                                                        <option>Shoes</option>
-                                                                        <option>Digital</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Minimum
-                                                                    Spend</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="number">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="row align-items-center">
-                                                                <label
-                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Maximum
-                                                                    Spend</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="number">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                                <div class="tab-pane fade" id="pills-usage" role="tabpanel">
-                                                    <form class="theme-form theme-form-2 mega-form">
-                                                        <div class="card-header-1">
-                                                            <h5>Usage Limits</h5>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <div class="mb-4 row align-items-center">
-                                                                <label
-                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Per
-                                                                    Limited</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="number">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="row align-items-center">
-                                                                <label
-                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Per
-                                                                    Customer</label>
-                                                                <div class="col-md-9 col-lg-10">
-                                                                    <input class="form-control" type="number">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -633,30 +504,29 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Create Coupon Table End -->
+                <!-- New Product Add End -->
+                <!-- Container-fluid Ends-->
 
-            <!-- footer start-->
-            <div class="container-fluid">
-                <footer class="footer">
-                    <div class="row">
-                        <div class="col-md-12 footer-copyright text-center">
-                            <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
+                <div class="container-fluid">
+                    <!-- footer start-->
+                    <footer class="footer">
+                        <div class="row">
+                            <div class="col-md-12 footer-copyright text-center">
+                                <p class="mb-0">Copyright 2024 © lasiof</p>
+                            </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
+                </div>
             </div>
-            <!-- footer end-->
         </div>
     </div>
-    <!-- page-wrapper end-->
+    <!-- page-wrapper End-->
 
-    <!-- Modal start -->
+    <!-- Modal Start -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered">
             <div class="modal-content">
-
                 <div class="modal-body">
                     <h5 class="modal-title" id="staticBackdropLabel">Logging Out</h5>
                     <p>Are you sure you want to log out?</p>
@@ -670,7 +540,60 @@
             </div>
         </div>
     </div>
-    <!-- Modal end -->
+    <!-- Modal End -->
+
+    <!-- Delete Modal Box Start -->
+    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-block text-center">
+                    <h5 class="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box">
+                        <p>The permission for the use/group, preview is inherited from the object, object will create a
+                            new permission for this object</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal" data-bs-dismiss="modal">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle2" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Done!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <div class="wrapper">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                        <h4 class="text-content">It's Removed.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delete Modal Box End -->
 
     <!-- latest js -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -686,24 +609,20 @@
     <script src="assets/js/scrollbar/simplebar.js"></script>
     <script src="assets/js/scrollbar/custom.js"></script>
 
-    <!-- customizer js -->
-    <script src="assets/js/customizer.js"></script>
-
     <!-- Sidebar js -->
     <script src="assets/js/config.js"></script>
 
-    <!-- Plugins JS -->
+    <!-- customizer js -->
+    <script src="assets/js/customizer.js"></script>
+
+    <!-- Plugins js -->
     <script src="assets/js/sidebar-menu.js"></script>
     <script src="assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="assets/js/notify/index.js"></script>
 
-    <!--Dropzon js -->
-    <script src="assets/js/dropzone/dropzone.js"></script>
-    <script src="assets/js/dropzone/dropzone-script.js"></script>
-
-    <!-- select 2 js -->
-    <script src="assets/js/select2.min.js"></script>
-    <script src="assets/js/select2-custom.js"></script>
+    <!-- Data table js -->
+    <script src="assets/js/jquery.dataTables.js"></script>
+    <script src="assets/js/custom-data-table.js"></script>
 
     <!-- sidebar effect -->
     <script src="assets/js/sidebareffect.js"></script>

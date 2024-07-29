@@ -5,6 +5,20 @@
     flex-wrap: wrap;
 }
 
+.odd{
+    max-width: 100px;
+}
+.payment-amount{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(194, 165, 221);
+}
+.Customer-search{
+    border:0.9px solid rgb(228, 220, 220);
+    width: 100%;
+    border-radius: 2px;
+}
+
 
 @media only screen and (max-width: 576px) {
     .purchase-table-details{

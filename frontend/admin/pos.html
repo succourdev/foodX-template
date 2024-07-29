@@ -46,6 +46,9 @@
 
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- custom css  -->
+     <link rel="stylesheet" href="./assets/css/custom/custom.css">
 </head>
 
 <body>
@@ -282,7 +285,7 @@
                                             <a href="currency-rates.html">Gift Card List</a>
                                         </li>
                                         <li>
-                                            <a href="currency-rates.html">Coupon Liat</a>
+                                            <a href="currency-rates.html">Coupon List</a>
                                         </li>
                                         <li>
                                             <a href="currency-rates.html">Delivery List</a>
@@ -428,14 +431,13 @@
                 
                     <div class="Container-fluid">
                         <div class="row ">
-                            <div class="col-6">
+                            <div class="col-12 col-md-6 ">
                                 <div class="card-body" style="padding-bottom: 0">
                                     <form method="POST" action="" accept-charset="UTF-8" class="payment-form" enctype="multipart/form-data">
                                         <input name="token" type="hidden" value="">
                                         <div class="row">
                                         <div class="col-md-12">
                                             <div class="row">
-
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <input type="hidden" name="warehouse_id_hidden" value="1">
@@ -447,15 +449,15 @@
                                                                 </div>
                                                                 <div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="1">
                                                                     <span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true">
-                                                                        <span class="text" >Rajendropur</span>
+                                                                        <span class="text" >warehouse</span>
                                                                         <span class="fa fa-check check-mark">
-
                                                                         </span></span>
-                                                                    </a></div>
+                                                                    </a>
                                                                 </div>
-                                                                    <select required="" id="warehouse_id" name="warehouse_id" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" title="Select warehouse..." tabindex="-98">
-                                                        
-                                                                <option value="1">Rajendropur</option>
+                                                            </div>
+                                                            <select required="" id="warehouse_id" name="warehouse_id" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" title="Select warehouse..." tabindex="-98">
+                                                                  
+                                                                  <option value="1">Rajendropur</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -472,16 +474,15 @@
                                                                 </div>
                                                                 <div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="1">
                                                                     <span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true">
-                                                                        <span class="text" >Riaz</span>
-                                                                        <span class="fa fa-check check-mark">
-
-                                                                        </span></span>
-                                                                    </a></div>
+                                                                        <span class="text" >saller 01</span>
+                                                                        <span class="fa fa-check check-mark"></span>
+                                                                    </span>
+                                                                    </a>
                                                                 </div>
-                                                                    <select required="" id="warehouse_id" name="warehouse_id" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" title="Select warehouse..." tabindex="-98">
-                                                        
-                                                                <option value="1">Riaz</option>
-                                                            </select>
+                                                                </div>
+                                                                <select required="" id="warehouse_id" name="warehouse_id" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" title="Select warehouse..." tabindex="-98">
+                                                                     <option value="1">saller 01</option>
+                                                                </select>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -514,6 +515,29 @@
                                                     </div>
                                                 </div>
 
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="hidden" name="warehouse_id_hidden" value="1">
+                                                        <div class="btn-group bootstrap-select form-control">
+                                                           
+                                                            <div class="dropdown-menu open" role="combobox">
+                                                                <div class="bs-searchbox">
+                                                                    <input type="text" class="form-control" autocomplete="off" role="textbox" aria-label="Search">
+                                                                </div>
+                                                                <div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="1">
+                                                                    <span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true">
+                                                                        
+                                                                        <span class="fa fa-check check-mark"></span>
+                                                                        
+                                                                    </span>
+                                                                    </a>
+                                                                </div>
+                                                                </div>
+                                                                <input type="text" value="Customer" class="py-2 text-center Customer-search">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 
                                                 <div class="col-md-12 my-2">
                                                     <div class="search-box form-group">
@@ -537,7 +561,7 @@
                                                     </table>
                                                 </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; height: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
                                             </div>
-                                            <div class="row" style="display: none;">
+                                            <div class="row" style="min-height: 400px;"">
                                                 <div class="col-md-2">
                                                     <div class="form-group">
                                                         <input type="hidden" name="total_qty">
@@ -587,24 +611,47 @@
                                                         <span class="totals-title">Total</span><span id="subtotal">0.00</span>
                                                     </div>
                                                     <div class="col-sm-4">
-                                                        <span class="totals-title">Discount <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#order-discount"> <i class="dripicons-document-edit"></i></button></span><span id="discount">0.00</span>
+                                                        <span class="totals-title">Discount 
+                                                            <button type="button" class="btn btn-link btn-sm d-inline" data-toggle="modal" data-target="#order-discount">
+                                                                <i class="ri-edit-line d-inline"></i>
+                                                            </button></span>
+                                                            <span id="discount">0.00</span>
                                                     </div>
                                                     <div class="col-sm-4">
-                                                        <span class="totals-title">Coupon <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#coupon-modal"><i class="dripicons-document-edit"></i></button></span><span id="coupon-text">0.00</span>
+                                                        <span class="totals-title">Coupon 
+                                                            <button type="button" class="btn btn-link btn-sm d-inline" data-toggle="modal" data-target="#coupon-modal">
+                                                                <i class="ri-edit-line d-inline"></i>
+                                                            </button>
+                                                        </span>
+                                                        <span id="coupon-text">0.00</span>
                                                     </div>
                                                     <div class="col-sm-4">
-                                                        <span class="totals-title">Tax <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#order-tax"><i class="dripicons-document-edit"></i></button></span><span id="tax">0.00</span>
+                                                        <span class="totals-title">Tax 
+                                                            <button type="button" class="btn btn-link btn-sm d-inline" data-toggle="modal" data-target="#order-tax">
+                                                                <i class="ri-edit-line d-inline"></i>
+                                                            </button>
+                                                        </span>
+                                                        <span id="tax">0.00</span> 
                                                     </div>
                                                     <div class="col-sm-4">
-                                                        <span class="totals-title">Shipping <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#shipping-cost-modal"><i class="dripicons-document-edit"></i></button></span><span id="shipping-cost">0.00</span>
+                                                        <span class="totals-title">Shipping 
+                                                            <button type="button" class="btn btn-link btn-sm d-inline" data-toggle="modal" data-target="#shipping-cost-modal">
+                                                                <i class="ri-edit-line d-inline"></i>
+                                                            </button></span>
+                                                            <span id="shipping-cost">0.00</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </form></div>
+                                </form>
                             </div>
-                            <div class="col-6">
+                            <div class="payment-amount">
+                                <h2>Grand Total <span id="grand-total">500.00</span></h2>
+                            </div>
+                            </div>
+                            
+                            <div class="col-12 col-md-6">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <button class="btn btn-block btn-primary" id="category-filter">Category</button>
@@ -620,19 +667,31 @@
                                             <thead class="d-none">
                                                 <tr role="row"><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th></tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody class="d-flex">
                                                                             
-                                                                        <tr role="row" class="odd">
-                                                    <td class="product-img sound-btn" title="Matton Kacchi Biryani" data-product="27627068 (Matton Kacchi Biryani)"><img src="https://pos.succour.ltd/images/product/zummXD2dvAtI.png" width="100%" class="mCS_img_loaded">
-                                                        <p>Matton Kacchi Biryani</p>
+                                                <tr role="row" class="odd">
+                                                    <td class="product-img sound-btn" title="Matton Kacchi Biryani" data-product="27627068 (Matton Kacchi Biryani)">
+                                                        <img src="#" width="100%" class="mCS_img_loaded">
+                                                        <p>Item</p>
                                                         <span>27627068</span>
                                                     </td>
-                                                                                        <td style="border:none;"></td>
-                                                                                                                            <td style="border:none;"></td>
-                                                                                                                            <td style="border:none;"></td>
-                                                                                                                            <td style="border:none;"></td>
-                                                                                    </tr></tbody>
-                                        </table><div class="dataTables_paginate paging_simple_numbers" id="product-table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="product-table_previous"><a href="#" aria-controls="product-table" data-dt-idx="0" tabindex="0" class="page-link"><i class="fa fa-angle-left"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="product-table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="product-table_next"><a href="#" aria-controls="product-table" data-dt-idx="2" tabindex="0" class="page-link"><i class="fa fa-angle-right"></i></a></li></ul></div></div>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class="product-img sound-btn" title="Matton Kacchi Biryani" data-product="27627068 (Matton Kacchi Biryani)">
+                                                        <img src="#" width="100%" class="mCS_img_loaded">
+                                                        <p>Item</p>
+                                                        <span>27627068</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="dataTables_paginate paging_simple_numbers" id="product-table_paginate">
+                                            <ul class="pagination">
+                                            <li class="paginate_button page-item previous disabled" id="product-table_previous">
+                                            <a href="#" aria-controls="product-table" data-dt-idx="0" tabindex="0" class="page-link">
+                                            <i class="fa fa-angle-left"></i></a></li><li class="paginate_button page-item active">
+                                            <a href="#" aria-controls="product-table" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                            </li><li class="paginate_button page-item next disabled" id="product-table_next"><a href="#" aria-controls="product-table" data-dt-idx="2" tabindex="0" class="page-link"><i class="fa fa-angle-right"></i></a></li></ul></div></div>
                                     </div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; height: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
                                 </div>
                             </div>
@@ -640,11 +699,16 @@
                         
                     </div>
                     <!-- footer start-->
-                    <footer class="footer">
+                    <footer class="footer w-100">
                         <div class="row">
-                            <div class="col-md-12 footer-copyright text-center">
-                                <p class="mb-0">Copyright 2024 © lasiof</p>
-                            </div>
+                           <div class="d-flex justify-content-center gap-2 flex-wrap">
+                            <button class="btn btn-primary"><i class="ri-currency-line"></i>Cash</button>
+                            <button class="btn btn-primary">Bkash</button>
+                            <button class="btn btn-primary">Nagad</button>
+                            <button class="btn btn-primary">Draft</button>
+                            <button class="btn btn-primary">Cancel</button>
+                            <button class="btn btn-primary">Recent Transiction</button>
+                           </div>
                         </div>
                     </footer>
                 </div>

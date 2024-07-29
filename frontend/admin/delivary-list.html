@@ -434,108 +434,33 @@
                                 <div class="col-sm-8 col-md-12 m-auto">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="card-header-2">
-                                                <h5>Sale List</h5>
-                                            </div>
-                                            <div class="col-md-1 col-3">
-                                                <a href="add-sell.html" class="btn btn-info"><i class="icon"></i>  Add Sale</a>
+                                            <div class="col-md-1 col-3 ">
+                                                <h5 class="title-header">Delivery List</h5>
                                             </div>
 
-                                            <div>
-                                                <div class="table-responsive my-4">
-                                                    <table id="sale-table" class="table sale-list dataTable" style="width: 100%;" role="grid" aria-describedby="sale-table_info">
-                                                        <thead>
-                                                            <tr role="row"><th class="not-exported dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" rowspan="1" colspan="1" style="width: 25px;" data-col="0" aria-label="">
+                                            <div class="table-responsive mt-4">
+                                                <table id="delivery-table" class="table dataTable no-footer" role="grid" aria-describedby="delivery-table_info">
+                                                    <thead>
+                                                        <tr role="row">
+                                                            <th class="not-exported dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" data-col="0" aria-label="">
                                                                 <div class="checkbox">
-                                                                    <input type="checkbox">
-                                                                    <label></label>
+                                                                    <input type="checkbox" class="dt-checkboxes"><label></label>
                                                                 </div>
-                                                                </th>
-                                                                <th class="sorting" tabindex="0" aria-controls="sale-table" rowspan="1" colspan="1" style="width: 98px;" aria-label="Date: activate to sort column ascending">Date</th>
-                                                                <th class="sorting_asc" tabindex="0" aria-controls="sale-table" rowspan="1" colspan="1" style="width: 211px;" aria-label="Reference: activate to sort column descending" aria-sort="ascending">Reference</th>
-                                                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 59px;" aria-label="Biller">Biller</th>
-                                                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 175px;" aria-label="Customer">Customer</th>
-                                                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 115px;" aria-label="Sale Status">Sale Status</th>
-                                                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 156px;" aria-label="Payment Status">Payment Status</th>
-                                                                <th class="sorting" tabindex="0" aria-controls="sale-table" rowspan="1" colspan="1" style="width: 125px;" aria-label="Grand Total: activate to sort column ascending">Grand Total</th>
-                                                                <th class="sorting" tabindex="0" aria-controls="sale-table" rowspan="1" colspan="1" style="width: 68px;" aria-label="Paid: activate to sort column ascending">Paid</th>
-                                                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 74px;" aria-label="Due">Due</th>
-                                                                <th class="not-exported sorting_disabled" rowspan="1" colspan="1" style="width: 116px;" aria-label="Action">Action</th>
-                                                            </tr>
-                                                        </thead>
-                                                        
-                                                        <tfoot class="tfoot active">
-                                                            <tr>
-                                                                <th rowspan="1" colspan="1"></th>
-                                                                <th rowspan="1" colspan="1">Total</th>
-                                                                <th rowspan="1" colspan="1"></th>
-                                                                <th rowspan="1" colspan="1"></th>
-                                                                <th rowspan="1" colspan="1"></th>
-                                                                <th rowspan="1" colspan="1"></th>
-                                                                <th rowspan="1" colspan="1"></th>
-                                                                <th rowspan="1" colspan="1">2130.00</th>
-                                                                <th rowspan="1" colspan="1">1930.00</th>
-                                                                <th rowspan="1" colspan="1">200.00</th>
-                                                                <th rowspan="1" colspan="1"></th>
-                                                            </tr>
-                                                        </tfoot>
-
-                                                        <tbody>
-                                                            <tr class="sale-link odd" data-sale="[ &quot;26/05/2024&quot;, &quot;FH-20240526-075058&quot;, &quot;Completed&quot;, &quot;riaz&quot;, &quot;BackDoorIT&quot;, &quot;almahmudr1@gmail.com&quot;, &quot;01776364781&quot;, &quot;Comilla&quot;, &quot;Comilla&quot;, &quot;Food Parcel&quot;, &quot;02&quot;, &quot;Rajendrapur&quot;, &quot;Gazipur&quot;, &quot;862&quot;, &quot;0&quot;, &quot;0&quot;, &quot;250&quot;, &quot;0&quot;, &quot;&quot;, &quot;0&quot;, &quot;20&quot;, &quot;270&quot;, &quot;270&quot;, &quot;&quot;, &quot;&quot;, &quot;riaz&quot;, &quot;almahmudr1@gmail.com&quot;, &quot;Rajendropur&quot;, &quot;&quot;, &quot;&quot;]" role="row">
-                                                                <td class=" dt-checkboxes-cell">
-                                                                    <div class="checkbox">
-                                                                        <input type="checkbox" class="dt-checkboxes">
-                                                                        <label></label>
-                                                                    </div>
-                                                                </td>
-                                                                <td>26/05/2024</td>
-                                                                <td class="sorting_1">FH-20240526-075058</td>
-                                                                <td>riaz</td>
-                                                                <td>Food Parcel</td>
-                                                                <td>
-                                                                    <div class="badge badge-success">Completed</div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="badge badge-success">Paid</div>
-                                                                </td>
-                                                                <td>270.00</td>
-                                                                <td>270.00</td>
-                                                                <td>0.00</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action
-                                                                        </button>
-                                                                        <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default" user="menu">
-                                                                            <li><a href="" class="btn btn-link"><i class="fa fa-copy"></i> Generate Invoice</a></li>
-                                                                            <li><a href="" class="btn btn-link"><i class="fa fa-copy"></i> Kitchen Token</a></li>
-                                                                            <li>
-                                                                                <button type="button" class="btn btn-link view"><i class="fa fa-eye"></i> View</button>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="" class="btn btn-link"><i class="dripicons-document-edit"></i> Edit</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <button type="button" class="add-payment btn btn-link" data-id="862" data-toggle="modal" data-target="#add-payment"><i class="fa fa-plus"></i> Add Payment</button>
-                                                                            </li>
-                                                                            <li>
-                                                                                <button type="button" class="get-payment btn btn-link" data-id="862"><i class="fa fa-money"></i> View Payment</button>
-                                                                            </li>
-                                                                            <li>
-                                                                                <button type="button" class="add-delivery btn btn-link" data-id="862"><i class="fa fa-truck"></i> Add Delivery</button>
-                                                                            </li>
-                                                                            <form method="POST" action="#" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE">
-                                                                                <input name="_token" type="hidden" value="RDZx5Vyu79j7iDFmlAZpe4slnaDGZCwRFbCf4M7H">
-                                                                                <li>
-                                                                                    <button type="submit" class="btn btn-link" onclick="return confirmDelete()"><i class="dripicons-trash"></i> Delete</button>
-                                                                                </li>
-                                                                            </form>
-                                                                        </ul>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                                                            </th>
+                                                            <th class="sorting" tabindex="0" aria-controls="delivery-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Delivery Reference: activate to sort column ascending">Delivery Reference</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="delivery-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Sale Reference: activate to sort column ascending">Sale Reference</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="delivery-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Customer: activate to sort column ascending">Customer</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="delivery-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Address: activate to sort column ascending">Address</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="delivery-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Status: activate to sort column ascending">Status</th>
+                                                            <th class="not-exported sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label="Action">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                         <tr class="odd">
+                                                            <td valign="top" colspan="7" class="dataTables_empty">No data available in table</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>

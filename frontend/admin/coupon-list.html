@@ -12,7 +12,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>Fastkart - Coupon List</title>
+    <title>Fastkart - Product</title>
 
     <!-- Google font-->
     <link
@@ -25,17 +25,17 @@
     <!-- Linear Icon css -->
     <link rel="stylesheet" href="assets/css/linearicon.css">
 
-    <!-- remixicon css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
-
-    <!-- Themify icon css-->
+    <!-- Themify icon css -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify.css">
-
-    <!-- Data Table css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
 
     <!-- Feather icon css -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css">
+
+    <!-- remixicon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
+
+    <!-- Data Table css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
 
     <!-- Plugins css -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css">
@@ -49,13 +49,13 @@
 </head>
 
 <body>
-    <!-- tap on top start -->
+    <!-- tap on top start-->
     <div class="tap-top">
         <span class="lnr lnr-chevron-up"></span>
     </div>
-    <!-- tap on tap end -->
+    <!-- tap on tap end-->
 
-    <!-- page-wrapper Start -->
+    <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
         <!-- Page Header Start-->
         <div class="page-header">
@@ -75,21 +75,6 @@
                     </div>
                 </div>
 
-                <form class="form-inline search-full" action="javascript:void(0)" method="get">
-                    <div class="form-group w-100">
-                        <div class="Typeahead Typeahead--twitterUsers">
-                            <div class="u-posRelative">
-                                <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
-                                    placeholder="Search Fastkart .." name="q" title="" autofocus>
-                                <i class="close-search" data-feather="x"></i>
-                                <div class="spinner-border Typeahead-spinner" role="status">
-                                    <span class="sr-only">Loading...</span>
-                                </div>
-                            </div>
-                            <div class="Typeahead-menu"></div>
-                        </div>
-                    </div>
-                </form>
                 <div class="nav-right col-6 pull-right right-header p-0">
                     <ul class="nav-menus">
                         <li>
@@ -209,7 +194,7 @@
                     </div>
                     <div class="logo-icon-wrapper">
                         <a href="index.html">
-                            <img class="img-fluid main-logo main-white" src="assets/images/logo/1-white.png" alt="logo">
+                            <img class="img-fluid main-logo main-white" src="assets/images/logo/logo.png" alt="logo">
                             <img class="img-fluid main-logo main-dark" src="assets/images/logo/logo-white.png"
                                 alt="logo">
                         </a>
@@ -237,21 +222,12 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="products.html">Prodcts</a>
+                                            <a href="products.html">Products</a>
                                         </li>
 
                                         <li>
                                             <a href="add-new-product.html">Add New Products</a>
                                         </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-list-check-2"></i>
-                                        <span>Category</span>
-                                    </a>
-                                    <ul class="sidebar-submenu">
                                         <li>
                                             <a href="category.html">Category List</a>
                                         </li>
@@ -259,60 +235,105 @@
                                         <li>
                                             <a href="add-new-category.html">Add New Category</a>
                                         </li>
+                                        
+                                        <li>
+                                            <a href="print_barcode.html">Print Barcode</a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-list-settings-line"></i>
-                                        <span>Attributes</span>
-                                    </a>
-                                    <ul class="sidebar-submenu">
-                                        <li>
-                                            <a href="attributes.html">Attributes</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="add-new-attributes.html">Add Attributes</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-user-3-line"></i>
-                                        <span>Users</span>
-                                    </a>
-                                    <ul class="sidebar-submenu">
-                                        <li>
-                                            <a href="all-users.html">All users</a>
-                                        </li>
-                                        <li>
-                                            <a href="add-new-user.html">Add new user</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-user-3-line"></i>
-                                        <span>Roles</span>
-                                    </a>
-                                    <ul class="sidebar-submenu">
-                                        <li>
-                                            <a href="role.html">All roles</a>
-                                        </li>
-                                        <li>
-                                            <a href="create-role.html">Create Role</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="media.html">
+                                        
                                         <i class="ri-price-tag-3-line"></i>
-                                        <span>Media</span>
+                                        <span>Purchase</span>
                                     </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="purchases.html">Purchase List</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="purchase-add.html">Add Purchase</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                               
+
+                                
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-focus-3-line"></i>
+                                        <span>Sale</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="translation.html">Sale List</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="currency-rates.html">POS</a>
+                                        </li>
+                                        <li>
+                                            <a href="add-sell.html">Add sale</a>
+                                        </li>
+                                        <li>
+                                            <a href="currency-rates.html">Gift Card List</a>
+                                        </li>
+                                        <li>
+                                            <a href="currency-rates.html">Coupon Liat</a>
+                                        </li>
+                                        <li>
+                                            <a href="currency-rates.html">Delivery List</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-price-tag-3-line"></i>
+                                        <span>Expence</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="translation.html">Expence Category</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="currency-rates.html">Expence List</a>
+                                        </li>
+                                        <li>
+                                            <a href="currency-rates.html">Add Expence</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-star-line"></i>
+                                        <span>Accounting</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="coupon-list.html">Assets List</a>
+                                        </li>
+                                        <li>
+                                            <a href="coupon-list.html">Accounting List</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="create-coupon.html">Add Accounting</a>
+                                        </li>
+                                        <li>
+                                            <a href="create-coupon.html">Money Transfer</a>
+                                        </li>
+                                        <li>
+                                            <a href="create-coupon.html">Balance Statement</a>
+                                        </li>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li class="sidebar-list">
@@ -334,21 +355,25 @@
                                 </li>
 
                                 <li class="sidebar-list">
-                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
-                                        <i class="ri-focus-3-line"></i>
-                                        <span>Localization</span>
+                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-user-3-line"></i>
+                                        <span>Users</span>
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="translation.html">Translation</a>
+                                            <a href="all-users.html">All users</a>
                                         </li>
-
                                         <li>
-                                            <a href="currency-rates.html">Currency Rates</a>
+                                            <a href="add-new-user.html">Add new user</a>
+                                        </li>
+                                        <li>
+                                            <a href="role.html">All roles</a>
+                                        </li>
+                                        <li>
+                                            <a href="create-role.html">Create Role</a>
                                         </li>
                                     </ul>
                                 </li>
-
                                 <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
                                         <i class="ri-price-tag-3-line"></i>
@@ -365,24 +390,11 @@
                                     </ul>
                                 </li>
 
+                                
                                 <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="taxes.html">
-                                        <i class="ri-price-tag-3-line"></i>
-                                        <span>Tax</span>
-                                    </a>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="product-review.html">
-                                        <i class="ri-star-line"></i>
-                                        <span>Product Review</span>
-                                    </a>
-                                </li>
-
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
-                                        <i class="ri-phone-line"></i>
-                                        <span>Support Ticket</span>
+                                    <a class="sidebar-link sidebar-title link-nav" href="reports.html">
+                                        <i class="ri-file-chart-line"></i>
+                                        <span>Reports</span>
                                     </a>
                                 </li>
 
@@ -398,19 +410,8 @@
                                     </ul>
                                 </li>
 
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="reports.html">
-                                        <i class="ri-file-chart-line"></i>
-                                        <span>Reports</span>
-                                    </a>
-                                </li>
+                                
 
-                                <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="list-page.html">
-                                        <i class="ri-list-check"></i>
-                                        <span>List Page</span>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
 
@@ -422,337 +423,124 @@
             </div>
             <!-- Page Sidebar Ends-->
 
-            <!-- Coupon list table starts-->
+            <!-- Container-fluid starts-->
             <div class="page-body">
+                
+                <!-- New Product Add Start -->
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="card card-table">
-                                <div class="card-body">
-                                    <div class="title-header option-title">
-                                        <h5>Coupon List</h5>
-                                        <div class="right-options">
-                                            <ul>
-                                                <li>
-                                                    <a class="btn btn-solid" href="add-new-product.html">Add Coupon</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="table-responsive">
-                                            <table class="table all-package coupon-list-table table-hover theme-table"
-                                                id="table_id">
-                                                <thead>
-                                                    <tr>
-                                                        <th>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated checkall"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </th>
-                                                        <th>Title</th>
-                                                        <th>Code</th>
-                                                        <th>Discount</th>
-                                                        <th>Status</th>
-                                                        <th>Option</th>
-                                                    </tr>
-                                                </thead>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-8 col-md-12 m-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="col-md-1 col-3">
+                                                <a href="#" class="btn btn-info">Add Coupon</a>
+                                            </div>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated check-it"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </td>
-                                                        <td>10% Off</td>
-                                                        <td>5488165</td>
-                                                        <td class="theme-color">10%</td>
-                                                        <td class="menu-status">
-                                                            <span class="danger">Restitute</span>
-                                                        </td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated check-it"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </td>
-                                                        <td>25% Off</td>
-                                                        <td>2143235</td>
-                                                        <td class="theme-color">17%</td>
-                                                        <td class="menu-status">
-                                                            <span class="success">Success</span>
-                                                        </td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated check-it"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </td>
-                                                        <td>12% Off</td>
-                                                        <td>3243468</td>
-                                                        <td class="theme-color">20%</td>
-                                                        <td class="menu-status">
-                                                            <span class="success">Success</span>
-                                                        </td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated check-it"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </td>
-                                                        <td>45% Off</td>
-                                                        <td>7846289</td>
-                                                        <td class="theme-color">50%</td>
-                                                        <td class="menu-status">
-                                                            <span class="danger">Restitute</span>
-                                                        </td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated check-it"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </td>
-                                                        <td>45% Off</td>
-                                                        <td>3614376</td>
-                                                        <td class="theme-color">60%</td>
-                                                        <td class="menu-status">
-                                                            <span class="success">Success</span>
-                                                        </td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated check-it"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </td>
-                                                        <td>80% Off</td>
-                                                        <td>8328192</td>
-                                                        <td class="theme-color">45%</td>
-                                                        <td class="menu-status">
-                                                            <span class="success">Success</span>
-                                                        </td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated check-it"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </td>
-                                                        <td>60% Off</td>
-                                                        <td>7218376</td>
-                                                        <td class="theme-color">30%</td>
-                                                        <td class="menu-status">
-                                                            <span class="success">Success</span>
-                                                        </td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <span class="form-check user-checkbox m-0 p-0">
-                                                                <input class="checkbox_animated check-it"
-                                                                    type="checkbox" value="">
-                                                            </span>
-                                                        </td>
-                                                        <td>40% Off</td>
-                                                        <td>1872349</td>
-                                                        <td class="theme-color">42%</td>
-                                                        <td class="menu-status">
-                                                            <span class="success">Success</span>
-                                                        </td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-responsive mt-4">
+                                                <table id="coupon-table" class="table dataTable dtr-inline w-100" role="grid" aria-describedby="coupon-table_info" style="width: 0px;">
+                                                    <thead>
+                                                        <tr role="row">
+                                                            <th class="not-exported dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" data-col="0" aria-label="">
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" class="dt-checkboxes">
+                                                                    <label></label>
+                                                                </div>
+                                                            </th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Coupon Code: activate to sort column ascending">Coupon Code</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Type: activate to sort column ascending">Type</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Amount: activate to sort column ascending">Amount</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Minimum Amount: activate to sort column ascending">Minimum Amount</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Qty: activate to sort column ascending">Qty</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Available: activate to sort column ascending">Available</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Expired Date: activate to sort column ascending">Expired Date</th>
+                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Created By: activate to sort column ascending">Created By</th>
+                                                            <th class="not-exported sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label="Action">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                
+                                                    <tbody>
+                                                                                    
+                                                        <tr data-id="3" role="row" class="odd">
+                                                            <td class="dt-checkboxes-cell" tabindex="0">
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" class="dt-checkboxes">
+                                                                    <label></label>
+                                                                </div>
+                                                            </td>
+                                                            <td>5%</td>
+                                                            <td><div class="badge badge-primary">percentage</div></td>
+                                                            <td>5</td>
+                                                            <td>N/A</td>
+                                                            <td>500</td>
+                                                            <td class="text-center"><div class="badge badge-success">492</div></td>
+                                                            <td><div class="badge badge-danger">31-12-2022</div></td>
+                                                            <td>riaz</td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action
+                                                                        <span class="caret"></span>
+                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default" user="menu">
+                                                                        <li><button type="button" data-id="3" data-code="5%" data-type="percentage" data-amount="5" data-minimum_amount="0" data-quantity="500" data-expired_date="2022-12-31" class="edit-btn btn btn-link" data-toggle="modal" data-target="#editModal"><i class="dripicons-document-edit"></i> Edit</button></li>
+                                                                        <form method="POST" action="" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="E6lVWjGlxpQp55F3aHXc80CJ80swWhDA6ASi5PFi">
+                                                                        <li>
+                                                                            <button type="submit" class="btn btn-link" onclick="return confirmDelete()"><i class="dripicons-trash"></i> Delete</button>
+                                                                        </li>
+                                                                        </form>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Pagination End -->
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- New Product Add End -->
                 <!-- Container-fluid Ends-->
 
-                <!-- footer start-->
                 <div class="container-fluid">
+                    <!-- footer start-->
                     <footer class="footer">
                         <div class="row">
                             <div class="col-md-12 footer-copyright text-center">
-                                <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
+                                <p class="mb-0">Copyright 2024 © lasiof</p>
                             </div>
                         </div>
                     </footer>
                 </div>
             </div>
-            <!-- footer end-->
         </div>
+    </div>
+    <!-- page-wrapper End-->
 
-        <!-- Modal Start -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <h5 class="modal-title" id="staticBackdropLabel">Logging Out</h5>
-                        <p>Are you sure you want to log out?</p>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class="button-box">
-                            <button type="button" class="btn btn--no" data-bs-dismiss="modal">No</button>
-                            <button type="button" class="btn  btn--yes btn-primary">Yes</button>
-                        </div>
+    <!-- Modal Start -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title" id="staticBackdropLabel">Logging Out</h5>
+                    <p>Are you sure you want to log out?</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <div class="button-box">
+                        <button type="button" class="btn btn--no" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn  btn--yes btn-primary">Yes</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal End -->
     </div>
-    <!-- page-wrapper End -->
+    <!-- Modal End -->
 
     <!-- Delete Modal Box Start -->
     <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
@@ -821,13 +609,13 @@
     <script src="assets/js/scrollbar/simplebar.js"></script>
     <script src="assets/js/scrollbar/custom.js"></script>
 
-    <!-- customizer js -->
-    <script src="assets/js/customizer.js"></script>
-
     <!-- Sidebar js -->
     <script src="assets/js/config.js"></script>
 
-    <!-- Plugins JS -->
+    <!-- customizer js -->
+    <script src="assets/js/customizer.js"></script>
+
+    <!-- Plugins js -->
     <script src="assets/js/sidebar-menu.js"></script>
     <script src="assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="assets/js/notify/index.js"></script>
@@ -835,9 +623,6 @@
     <!-- Data table js -->
     <script src="assets/js/jquery.dataTables.js"></script>
     <script src="assets/js/custom-data-table.js"></script>
-
-    <!-- all checkbox select js -->
-    <script src="assets/js/checkbox-all-check.js"></script>
 
     <!-- sidebar effect -->
     <script src="assets/js/sidebareffect.js"></script>
