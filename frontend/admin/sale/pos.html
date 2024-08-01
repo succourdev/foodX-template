@@ -49,6 +49,9 @@
 
     <!-- custom css  -->
      <link rel="stylesheet" href="./../assets/css/custom/custom.css">
+
+     <!-- pos css  -->
+      <link rel="stylesheet" href="../assets/css/custom/pos.css">
 </head>
 
 <body>
@@ -428,286 +431,421 @@
 
             <!-- Container-fluid starts-->
             <div class="page-body">
-                <div class="Container-fluid">
-                    <div class="row ">
-                        <div class="col-12 col-md-6 ">
-                             <div class="card-body" style="padding-bottom: 0">
-                                <form method="POST" action="" accept-charset="UTF-8" class="payment-form" enctype="multipart/form-data">
-                                    <input name="token" type="hidden" value="">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="warehouse_id_hidden" value="1">
-                                                        <div class="btn-group bootstrap-select form-control">
-                                                           
-                                                            <div class="dropdown-menu open" role="combobox">
-                                                                <div class="bs-searchbox">
-                                                                    <input type="text" class="form-control" autocomplete="off" role="textbox" aria-label="Search">
-                                                                </div>
-                                                                <div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="1">
-                                                                    <span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true">
-                                                                        <span class="text" >warehouse</span>
-                                                                        <span class="fa fa-check check-mark">
-                                                                        </span></span>
+                <!-- 2nd pos  -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="order-queue">
+                                <h2>Order Queue</h2>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search something here" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card o-hidden card-hover">
+                                                    <div class="card-header border-0 pb-1">
+                                                        <div class="card-header-title p-0">
+                                                            <h4>Category</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body p-0">
+                                                        <div class="category-slider no-arrow category-row catagory-overflow">
+                                                            <div>
+                                                                <div class="dashboard-category">
+                                                                    <a href="javascript:void(0)" class="category-image">
+                                                                        <img src="../assets/svg/vegetable.svg" class="img-fluid" alt="">
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" class="category-name">
+                                                                        <h6>Vegetables & Fruit</h6>
                                                                     </a>
                                                                 </div>
                                                             </div>
-                                                            <select required="" id="warehouse_id" name="warehouse_id" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" title="Select warehouse..." tabindex="-98">
-                                                                  
-                                                                  <option value="1">Rajendropur</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="warehouse_id_hidden" value="1">
-                                                        <div class="btn-group bootstrap-select form-control">
-                                                           
-                                                            <div class="dropdown-menu open" role="combobox">
-                                                                <div class="bs-searchbox">
-                                                                    <input type="text" class="form-control" autocomplete="off" role="textbox" aria-label="Search">
-                                                                </div>
-                                                                <div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="1">
-                                                                    <span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true">
-                                                                        <span class="text" >saller 01</span>
-                                                                        <span class="fa fa-check check-mark"></span>
-                                                                    </span>
+                    
+                                                            <div>
+                                                                <div class="dashboard-category">
+                                                                    <a href="javascript:void(0)" class="category-image">
+                                                                        <img src="../assets/svg/cup.svg" class="img-fluid" alt="">
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" class="category-name">
+                                                                        <h6>Beverages</h6>
                                                                     </a>
                                                                 </div>
-                                                                </div>
-                                                                <select required="" id="warehouse_id" name="warehouse_id" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" title="Select warehouse..." tabindex="-98">
-                                                                     <option value="1">saller 01</option>
-                                                                </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="warehouse_id_hidden" value="1">
-                                                        <div class="btn-group bootstrap-select form-control">
-                                                           
-                                                            <div class="dropdown-menu open" role="combobox">
-                                                                <div class="bs-searchbox">
-                                                                    <input type="text" class="form-control" autocomplete="off" role="textbox" aria-label="Search">
-                                                                </div>
-                                                                <div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="1">
-                                                                    <span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true">
-                                                                        <span class="text" >Walk In customer</span>
-                                                                        <span class="fa fa-check check-mark">
-
-                                                                        </span></span>
-                                                                    </a></div>
-                                                                </div>
-                                                                    <select required="" id="warehouse_id" name="warehouse_id" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" title="Select Customer" tabindex="-98">
-                                                        
-                                                                <option value="1">Walk In customer</option>
-                                                                <option value="1">Food Percel</option>
-                                                                <option value="1">Delivery</option>
-                                                                <option value="1">Advance Order</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="warehouse_id_hidden" value="1">
-                                                        <div class="btn-group bootstrap-select form-control">
-                                                           
-                                                            <div class="dropdown-menu open" role="combobox">
-                                                                <div class="bs-searchbox">
-                                                                    <input type="text" class="form-control" autocomplete="off" role="textbox" aria-label="Search">
-                                                                </div>
-                                                                <div class="dropdown-menu inner" role="listbox" aria-expanded="false"><a tabindex="0" class="dropdown-item selected" data-original-index="1">
-                                                                    <span class="dropdown-item-inner " data-tokens="null" role="option" tabindex="0" aria-disabled="false" aria-selected="true">
-                                                                        
-                                                                        <span class="fa fa-check check-mark"></span>
-                                                                        
-                                                                    </span>
+                                                            </div>
+                    
+                                                            <div>
+                                                                <div class="dashboard-category">
+                                                                    <a href="javascript:void(0)" class="category-image">
+                                                                        <img src="../assets/svg/meats.svg" class="img-fluid" alt="">
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" class="category-name">
+                                                                        <h6>Meats & Seafood</h6>
                                                                     </a>
                                                                 </div>
+                                                            </div>
+                    
+                                                            <div>
+                                                                <div class="dashboard-category">
+                                                                    <a href="javascript:void(0)" class="category-image">
+                                                                        <img src="../assets/svg/breakfast.svg" class="img-fluid" alt="">
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" class="category-name">
+                                                                        <h6>Breakfast</h6>
+                                                                    </a>
                                                                 </div>
-                                                                <input type="text" value="Customer" class="py-2 text-center Customer-search">
+                                                            </div>
+                    
+                                                            <div>
+                                                                <div class="dashboard-category">
+                                                                    <a href="javascript:void(0)" class="category-image">
+                                                                        <img src="../assets/svg/frozen.svg" class="img-fluid" alt="">
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" class="category-name">
+                                                                        <h6>Frozen Foods</h6>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                    
+                                                            <div>
+                                                                <div class="dashboard-category">
+                                                                    <a href="javascript:void(0)" class="category-image">
+                                                                        <img src="../assets/svg/milk.svg" class="img-fluid" alt="">
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" class="category-name">
+                                                                        <h6>Milk & Dairies</h6>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                    
+                                                            <div>
+                                                                <div class="dashboard-category">
+                                                                    <a href="javascript:void(0)" class="category-image">
+                                                                        <img src="../assets/svg/pet.svg" class="img-fluid" alt="">
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" class="category-name">
+                                                                        <h6>Pet Food</h6>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                    
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                
-                                                <div class="col-md-12 my-2">
-                                                    <div class="search-box form-group">
-                                                        <input type="text" name="product_code_name" id="lims_productcodeSearch" placeholder="Scan/Search product by name/code" class="form-control ui-autocomplete-input" autocomplete="off">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="table-responsive transaction-list mCustomScrollbar _mCS_2"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                                    <table id="myTable" class="table table-hover table-striped order-list table-fixed ui-keyboard-input ui-widget-content ui-corner-all" aria-haspopup="true" role="textbox">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="col-sm-4">Product</th>
-                                                                <th class="col-sm-2">Price</th>
-                                                                <th class="col-sm-3">Quantity</th>
-                                                                <th class="col-sm-3">SubTotal</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        </tbody>
-                                                    </table>
-                                                </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; height: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
-                                            </div>
-                                            <div class="row" style="min-height: 400px;"">
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="total_qty">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="total_discount" value="0.00">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="total_tax" value="0.00">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="total_price">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="item">
-                                                        <input type="hidden" name="order_tax">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <input type="hidden" name="grand_total">
-                                                        <input type="hidden" name="coupon_discount">
-                                                        <input type="hidden" name="sale_status" value="1">
-                                                        <input type="hidden" name="coupon_active">
-                                                        <input type="hidden" name="coupon_id">
-                                                        <input type="hidden" name="coupon_discount">
-            
-                                                        <input type="hidden" name="pos" value="1">
-                                                        <input type="hidden" name="draft" value="0">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 totals" style="border-top: 2px solid #e4e6fc; padding-top: 10px;">
-                                                <div class="row">
-                                                    <div class="col-sm-4">
-                                                        <span class="totals-title">Items</span><span id="item">0</span>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <span class="totals-title">Total</span><span id="subtotal">0.00</span>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <span class="totals-title">Discount 
-                                                            <button type="button" class="btn btn-link btn-sm d-inline" data-toggle="modal" data-target="#order-discount">
-                                                                <i class="ri-edit-line d-inline"></i>
-                                                            </button></span>
-                                                            <span id="discount">0.00</span>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <span class="totals-title">Coupon 
-                                                            <button type="button" class="btn btn-link btn-sm d-inline" data-toggle="modal" data-target="#coupon-modal">
-                                                                <i class="ri-edit-line d-inline"></i>
-                                                            </button>
-                                                        </span>
-                                                        <span id="coupon-text">0.00</span>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <span class="totals-title">Tax 
-                                                            <button type="button" class="btn btn-link btn-sm d-inline" data-toggle="modal" data-target="#order-tax">
-                                                                <i class="ri-edit-line d-inline"></i>
-                                                            </button>
-                                                        </span>
-                                                        <span id="tax">0.00</span> 
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <span class="totals-title">Shipping 
-                                                            <button type="button" class="btn btn-link btn-sm d-inline" data-toggle="modal" data-target="#shipping-cost-modal">
-                                                                <i class="ri-edit-line d-inline"></i>
-                                                            </button></span>
-                                                            <span id="shipping-cost">0.00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="payment-amount">
-                                <h2>Grand Total <span id="grand-total">500.00</span></h2>
-                            </div>
-                            </div>
-                            
-                            <div class="col-12 col-md-6">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <button class="btn btn-block btn-primary" id="category-filter">Category</button>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button class="btn btn-block btn-info" id="brand-filter">Brand</button>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button class="btn btn-block btn-danger" id="featured-filter">Featured</button>
-                                    </div>
-                                    <div class="col-md-12 mt-1 table-container mCustomScrollbar _mCS_3"><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                        <div id="product-table_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
-                                            <table id="product-table" class="table no-shadow product-list dataTable no-footer" role="grid">
-                                                <thead class="d-none">
-                                                    <tr role="row"><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th><th class="sorting" tabindex="0" aria-controls="product-table" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 0px;"></th></tr>
-                                                </thead>
-                                                <tbody class="d-flex">
-                                                                                
-                                                    <tr role="row" class="odd">
-                                                        <td class="product-img sound-btn" title="Matton Kacchi Biryani" data-product="27627068 (Matton Kacchi Biryani)">
-                                                            <img src="#" width="100%" class="mCS_img_loaded">
-                                                            <p>Item</p>
-                                                            <span>27627068</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr role="row" class="odd">
-                                                        <td class="product-img sound-btn" title="Matton Kacchi Biryani" data-product="27627068 (Matton Kacchi Biryani)">
-                                                            <img src="#" width="100%" class="mCS_img_loaded">
-                                                            <p>Item</p>
-                                                            <span>27627068</span>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        <div class="dataTables_paginate paging_simple_numbers" id="product-table_paginate">
-                                            <ul class="pagination">
-                                            <li class="paginate_button page-item previous disabled" id="product-table_previous">
-                                            <a href="#" aria-controls="product-table" data-dt-idx="0" tabindex="0" class="page-link">
-                                            <i class="fa fa-angle-left"></i></a></li><li class="paginate_button page-item active">
-                                            <a href="#" aria-controls="product-table" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-                                            </li><li class="paginate_button page-item next disabled" id="product-table_next"><a href="#" aria-controls="product-table" data-dt-idx="2" tabindex="0" class="page-link"><i class="fa fa-angle-right"></i></a></li></ul></div></div>
-                                        </div>
-                                        <div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
-                                            <div class="mCSB_draggerContainer">
-                                                <div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; height: 0px;">
-                                                    <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
-                                                </div>
-                                                <div class="mCSB_draggerRail"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="pos-products">
+                                    <h3>Most Ordered</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1551009122-7968c33e7586?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Vietnamese Homemade Salad" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Vietnamese Homemade Salad</h5>
+                                                    <p class="order-item-price">$4.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1574180045787-fc54e715a42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Baked Pancake with Honey Sauce" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Baked Pancake with Honey Sauce</h5>
+                                                    <p class="order-item-price">$3.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1505252531323-dc58912461e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Japanese Homemade Original Ramen" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Japanese Homemade Original Ramen</h5>
+                                                    <p class="order-item-price">$6.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>Popular Dishes</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1505252531323-dc58912461e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Egg Fried Rice Original Made by Asian" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Egg Fried Rice Original Made by Asian</h5>
+                                                    <p class="order-item-price">$7.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1565958011703-50048c6e3204?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="2x Cheese Burger with Fries" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">2x Cheese Burger with Fries</h5>
+                                                    <p class="order-item-price">$9.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1546901487-d8e6d7921d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Indomie Soto with Shrimp and Eggs" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Indomie Soto with Shrimp and Eggs</h5>
+                                                    <p class="order-item-price">$12.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1546901487-d8e6d7921d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Noodles with Scallops" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Noodles with Scallops</h5>
+                                                    <p class="order-item-price">$8.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1621130351569-a138a774e85f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Bread Toast with Egg" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Bread Toast with Egg</h5>
+                                                    <p class="order-item-price">$7.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1546901487-d8e6d7921d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Large Italian Pizza" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Large Italian Pizza</h5>
+                                                    <p class="order-item-price">$8.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1581044904176-c89a6b200db2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Egg Soup with Noodles Inside" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Egg Soup with Noodles Inside</h5>
+                                                    <p class="order-item-price">$4.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1546901487-d8e6d7921d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Healthy Vegie Salad" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Healthy Vegie Salad</h5>
+                                                    <p class="order-item-price">$3.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="order-item">
+                                                <img src="https://images.unsplash.com/photo-1621130351569-a138a774e85f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Waffle with Blueberries" class="order-item-image">
+                                                <div class="order-item-details">
+                                                    <h5 class="order-item-title">Waffle with Blueberries</h5>
+                                                    <p class="order-item-price">$6.99</p>
+                                                    <div class="order-item-quantity-control">
+                                                        <button class="order-item-quantity-button">-</button>
+                                                        <span class="order-item-quantity">1</span>
+                                                        <button class="order-item-quantity-button">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
                             </div>
                         </div>
-                        
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Order Details</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <button class="btn btn-primary btn-block">Dine in</button>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button class="btn btn-secondary btn-block">Take away</button>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button class="btn btn-light btn-block">Delivery</button>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <label for="customerName">Customer Name</label>
+                                            <input type="text" class="form-control" id="customerName" placeholder="Jhonatan Andrew">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="tableNumber">Seller</label>
+                                            <input type="text" class="form-control" id="tableNumber" placeholder="foisal">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12">
+                                            <h5 class="mb-3">Order Items</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 ordersection" id="orderItems">
+                                        <div class="col-md-12 ">
+                                            <div class="card mb-3 order-items">
+                                                <img src="" class="card-img-left" alt="image">
+                                                <div class="card-body order-details px-1">
+                                                    <div>
+                                                        <h5 class="card-title">Baked Pancake with Honey Sauce</h5>
+                                                        <p class="card-text">$3.99 x 1</p>
+                                                    </div>
+                                                    <button class="btn px-2 btn-danger">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card mb-3 order-items">
+                                                <img src="" class="card-img-left" alt="image">
+                                                <div class="card-body order-details px-1">
+                                                    <div>
+                                                        <h5 class="card-title">Baked Pancake with Honey Sauce</h5>
+                                                        <p class="card-text">$3.99 x 1</p>
+                                                    </div>
+                                                    <button class="btn px-2 btn-danger">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card mb-3 order-items">
+                                                <img src="" class="card-img-left" alt="image">
+                                                <div class="card-body order-details px-1">
+                                                    <div>
+                                                        <h5 class="card-title">Baked Pancake with Honey Sauce</h5>
+                                                        <p class="card-text">$3.99 x 1</p>
+                                                    </div>
+                                                    <button class="btn px-2 btn-danger">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card mb-3 order-items">
+                                                <img src="" class="card-img-left" alt="image">
+                                                <div class="card-body order-details px-1">
+                                                    <div>
+                                                        <h5 class="card-title">Baked Pancake with Honey Sauce</h5>
+                                                        <p class="card-text">$3.99 x 1</p>
+                                                    </div>
+                                                    <button class="btn px-2 btn-danger">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12">
+                                            <h5 class="mb-3">Total</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12 flex-item">
+                                            <p class="mb-0">Subtotal</p>
+                                            <p class="mb-0">Tax 10%</p>
+                                            <p class="font-weight-bold mb-0">Total</p>
+                                        </div>
+                                        <div class="col-md-12 text-right flex-item">
+                                            <p class="mb-0">$23.96</p>
+                                            <p class="mb-0">$2.39</p>
+                                            <p class="font-weight-bold mb-0">$26.35</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-success btn-block">Pay $26.35</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
+                </div>
+
+
                     <!-- footer start-->
                     <footer class="footer w-100">
                         <div class="row">
@@ -834,6 +972,10 @@
 
     <!-- Theme js -->
     <script src="../assets/js/script.js"></script>
+
+    <!-- pos js  -->
+     <script src="../assets/js/custom/pos.js"></script>
+    
 </body>
 
 </html>

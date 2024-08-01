@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  margin-top: 20px;
+}
+.catagory-overflow{
+  flex-wrap: nowrap;
+}
+
+.order-queue {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.order-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.order-item-details {
+  flex: 1;
+}
+
+.order-item-title {
+  font-weight: bold;
+}
+
+.order-item-price {
+  font-size: 14px;
+  color: #888;
+}
+
+.order-item-quantity {
+  font-size: 14px;
+  color: #888;
+  margin-left: 10px;
+}
+
+.order-item-quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.order-item-quantity-button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.order-item-quantity-button:hover {
+  color: #333;
+}
+
+.order-item-remove {
+  font-size: 16px;
+  color: #888;
+  cursor: pointer;
+}
+
+.order-item-remove:hover {
+  color: #333;
+}
+
+.order-summary {
+  margin-top: 20px;
+}
+
+.order-summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-summary-item-label {
+  font-weight: bold;
+}
+
+.order-summary-item-value {
+  font-size: 14px;
+  color: #888;
+}
+
+.order-total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.order-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #0069d9;
+}
+
+.pos-products{
+  max-height: 28rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.ordersection{
+  max-height: 24rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.order-items{
+  display: flex;
+  flex-direction: row;
+}
+.order-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-item{
+  display: flex;
+  justify-content: space-between;
+}

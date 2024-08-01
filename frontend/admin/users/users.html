@@ -12,7 +12,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Fastkart - Product</title>
+    <title>Fastkart - Accounts</title>
 
     <!-- Google font-->
     <link
@@ -47,8 +47,9 @@
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
-    <!-- product css  -->
-     <link rel="stylesheet" href="../assets/css/custom/product.css">
+    <!-- user css  -->
+     <link rel="stylesheet" href="../../assets/css/custom/users.css">
+    
 </head>
 
 <body>
@@ -78,7 +79,6 @@
                     </div>
                 </div>
 
-                
                 <div class="nav-right col-6 pull-right right-header p-0">
                     <ul class="nav-menus">
                         <li>
@@ -226,22 +226,22 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="products.html">Products</a>
+                                            <a href="../product/products.html">Products</a>
                                         </li>
 
                                         <li>
-                                            <a href="add-new-product.html">Add New Products</a>
+                                            <a href="../product/add-new-product.html">Add New Products</a>
                                         </li>
                                         <li>
-                                            <a href="category.html">Category List</a>
+                                            <a href="../product/category.html">Category List</a>
                                         </li>
 
                                         <li>
-                                            <a href="add-new-category.html">Add New Category</a>
+                                            <a href="../product/add-new-category.html">Add New Category</a>
                                         </li>
                                         
                                         <li>
-                                            <a href="print_barcode.html">Print Barcode</a>
+                                            <a href="../product/print_barcode.html">Print Barcode</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -286,7 +286,7 @@
                                             <a href="../sale/gift-card.html">Gift Card List</a>
                                         </li>
                                         <li>
-                                            <a href="../sale/coupon-list.html">Coupon List</a>
+                                            <a href="../sale/coupon-list.html">Coupon Liat</a>
                                         </li>
                                         <li>
                                             <a href="../sale/delivary-list.html">Delivery List</a>
@@ -308,7 +308,7 @@
                                             <a href="../expence/expenses.html">Expence List</a>
                                         </li>
                                         <li>
-                                            <a href="../currency-rates.html">Add Expence</a>
+                                            <a href="../expence/expense-categories.html">Add Expence</a>
                                         </li>
                                         
                                     </ul>
@@ -321,7 +321,7 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="../accounting/assets.html">../assets List</a>
+                                            <a href="../accounting/assets.html">Assets</a>
                                         </li>
                                         <li>
                                             <a href="../accounting/accounts.html">Accounting List</a>
@@ -365,16 +365,10 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="../all-users.html">All users</a>
+                                            <a href="users.html">All users</a>
                                         </li>
                                         <li>
-                                            <a href="../add-new-user.html">Add new user</a>
-                                        </li>
-                                        <li>
-                                            <a href="../role.html">All roles</a>
-                                        </li>
-                                        <li>
-                                            <a href="../create-role.html">Create Role</a>
+                                            <a href="add-new-user.html">Add new user</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -389,7 +383,7 @@
                                         </li>
 
                                         <li>
-                                            <a href="../create-coupon.html">Create Coupon</a>
+                                            <a href="../sale/create-coupon.html">Create Coupon</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -429,50 +423,63 @@
 
             <!-- Container-fluid starts-->
             <div class="page-body">
+                
+                <!-- New Product Add Start -->
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="card card-table">
-                                <div class="card-body">
-                                    <div class="title-header option-title d-sm-flex d-block">
-                                        <h5>Products List</h5>
-                                        <div class="right-options">
-                                            <ul>
-                                                <li>
-                                                    <a href="javascript:void(0)">import</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Export</a>
-                                                </li>
-                                                <li>
-                                                    <a class="btn btn-solid" href="./add-new-product.html">Add Product</a>
-                                                </li>
-                                            </ul>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="m-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="container-fluid">
+                                                    <h2 class="mt-4">Users</h2>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+                                                        </div>
+                                                        <div class="col-md-6 text-right">
+                                                            <button class="btn btn-primary" onclick="searchUsers()">Search</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>User</th>
+                                                                    <th>Name</th>
+                                                                    <th>Email</th>
+                                                                    <th>Created</th>
+                                                                    <th>Status</th>
+                                                                    <th>Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="userTableBody">
+                                                                <!-- User data will be loaded here -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col-md-12 text-center">
+                                                            <nav aria-label="Page navigation">
+                                                                <ul class="pagination" id="pagination">
+                                                                    <!-- Pagination buttons will be loaded here -->
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="container-fluid">
-                                        <table class="table product-table mt-4">
-                                            <thead>
-                                                <tr>
-                                                    <th>Product Image</th>
-                                                    <th>Product Name</th>
-                                                    <th>Category</th>
-                                                    <th>Current Qty</th>
-                                                    <th>Price</th>
-                                                    <th>Status</th>
-                                                    <th>Option</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="productTableBody">
-                                            </tbody>
-                                        </table>
-                                        <ul class="pagination" id="pagination"></ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- New Product Add End -->
                 <!-- Container-fluid Ends-->
 
                 <div class="container-fluid">
@@ -480,7 +487,7 @@
                     <footer class="footer">
                         <div class="row">
                             <div class="col-md-12 footer-copyright text-center">
-                                <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
+                                <p class="mb-0">Copyright 2024 © lasiof</p>
                             </div>
                         </div>
                     </footer>
@@ -489,6 +496,8 @@
         </div>
     </div>
     <!-- page-wrapper End-->
+
+    
 
     <!-- latest js -->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
@@ -525,8 +534,9 @@
     <!-- Theme js -->
     <script src="../assets/js/script.js"></script>
 
-    <!-- product.js  -->
-     <script src="../assets/js/custom/product.js"></script>
+
+    <script src="../assets/js/custom/users.js"></script>
+
 </body>
 
 </html>

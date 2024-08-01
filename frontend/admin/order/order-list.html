@@ -12,7 +12,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Fastkart - Product</title>
+    <title>Fastkart - Order List</title>
 
     <!-- Google font-->
     <link
@@ -22,8 +22,8 @@
     <!-- Fontawesome css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/font-awesome.css">
 
-    <!-- Linear Icon css -->
-    <link rel="stylesheet" href="../assets/css/linearicon.css">
+    <!-- Linear Icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
     <!-- Themify icon css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
@@ -46,9 +46,6 @@
 
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-
-    <!-- product css  -->
-     <link rel="stylesheet" href="../assets/css/custom/product.css">
 </head>
 
 <body>
@@ -78,7 +75,21 @@
                     </div>
                 </div>
 
-                
+                <form class="form-inline search-full" action="javascript:void(0)" method="get">
+                    <div class="form-group w-100">
+                        <div class="Typeahead Typeahead--twitterUsers">
+                            <div class="u-posRelative">
+                                <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
+                                    placeholder="Search Fastkart .." name="q" title="" autofocus>
+                                <i class="close-search" data-feather="x"></i>
+                                <div class="spinner-border Typeahead-spinner" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="Typeahead-menu"></div>
+                        </div>
+                    </div>
+                </form>
                 <div class="nav-right col-6 pull-right right-header p-0">
                     <ul class="nav-menus">
                         <li>
@@ -141,25 +152,25 @@
                             </div>
                             <ul class="profile-dropdown onhover-show-div">
                                 <li>
-                                    <a href="../all-users.html">
+                                    <a href="all-users.html">
                                         <i data-feather="users"></i>
                                         <span>Users</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../order-list.html">
+                                    <a href="order-list.html">
                                         <i data-feather="archive"></i>
                                         <span>Orders</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../support-ticket.html">
+                                    <a href="support-ticket.html">
                                         <i data-feather="phone"></i>
                                         <span>Spports Tickets</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../profile-setting.html">
+                                    <a href="profile-setting.html">
                                         <i data-feather="settings"></i>
                                         <span>Settings</span>
                                     </a>
@@ -186,7 +197,7 @@
                 <div id="sidebarEffect"></div>
                 <div>
                     <div class="logo-wrapper logo-wrapper-center">
-                        <a href="../index.html" data-bs-original-title="" title="">
+                        <a href="..index.html" data-bs-original-title="" title="">
                             <img class="img-fluid for-white" src="../assets/images/logo/full-white.png" alt="logo">
                         </a>
                         <div class="back-btn">
@@ -226,22 +237,22 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="products.html">Products</a>
+                                            <a href="../product/products.html">Products</a>
                                         </li>
 
                                         <li>
-                                            <a href="add-new-product.html">Add New Products</a>
+                                            <a href="../product/add-new-product.html">Add New Products</a>
                                         </li>
                                         <li>
-                                            <a href="category.html">Category List</a>
+                                            <a href="../product/category.html">Category List</a>
                                         </li>
 
                                         <li>
-                                            <a href="add-new-category.html">Add New Category</a>
+                                            <a href="../product/add-new-category.html">Add New Category</a>
                                         </li>
                                         
                                         <li>
-                                            <a href="print_barcode.html">Print Barcode</a>
+                                            <a href="../product/print_barcode.html">Print Barcode</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -347,13 +358,7 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="../order-list.html">Order List</a>
-                                        </li>
-                                        <li>
-                                            <a href="../order-detail.html">Order Detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="../order-tracking.html">Order Tracking</a>
+                                            <a href="order-list.html">Order List</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -427,56 +432,53 @@
             </div>
             <!-- Page Sidebar Ends-->
 
-            <!-- Container-fluid starts-->
+            <!-- Order section Start -->
             <div class="page-body">
+                <!-- Table Start -->
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card card-table">
                                 <div class="card-body">
-                                    <div class="title-header option-title d-sm-flex d-block">
-                                        <h5>Products List</h5>
-                                        <div class="right-options">
-                                            <ul>
-                                                <li>
-                                                    <a href="javascript:void(0)">import</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Export</a>
-                                                </li>
-                                                <li>
-                                                    <a class="btn btn-solid" href="./add-new-product.html">Add Product</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div class="title-header option-title">
+                                        <h5>Order List</h5>
+                                        <a href="#" class="btn btn-solid">Download all orders</a>
                                     </div>
-                                    <div class="container-fluid">
-                                        <table class="table product-table mt-4">
-                                            <thead>
-                                                <tr>
-                                                    <th>Product Image</th>
-                                                    <th>Product Name</th>
-                                                    <th>Category</th>
-                                                    <th>Current Qty</th>
-                                                    <th>Price</th>
-                                                    <th>Status</th>
-                                                    <th>Option</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="productTableBody">
-                                            </tbody>
-                                        </table>
-                                        <ul class="pagination" id="pagination"></ul>
+                                    <div>
+                                        <div class="table-responsive">
+                                            <table class="table all-package order-table theme-table" id="table_id">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Order Image</th>
+                                                        <th>Order Code</th>
+                                                        <th>Date</th>
+                                                        <th>Payment Method</th>
+                                                        <th>Delivery Status</th>
+                                                        <th>Amount</th>
+                                                        <th>Option</th>
+                                                    </tr>
+                                                </thead>
+            
+                                                <tbody id="orderTableBody">
+                                                    <!-- Order data will be loaded here -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <nav aria-label="Page navigation example" id="pagination">
+                                            <ul class="pagination justify-content-center">
+                                                <!-- Pagination buttons will be loaded here -->
+                                            </ul>
+                                        </nav>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Container-fluid Ends-->
+                <!-- Table End -->
 
+                <!-- footer start-->
                 <div class="container-fluid">
-                    <!-- footer start-->
                     <footer class="footer">
                         <div class="row">
                             <div class="col-md-12 footer-copyright text-center">
@@ -486,9 +488,14 @@
                     </footer>
                 </div>
             </div>
+            <!-- Order section End -->
         </div>
+        <!-- Page Body End-->
     </div>
-    <!-- page-wrapper End-->
+    <!-- page-wrapper End -->
+
+
+    
 
     <!-- latest js -->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
@@ -500,15 +507,15 @@
     <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
     <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
 
+    <!-- customizer js -->
+    <script src="../assets/js/customizer.js"></script>
+
     <!-- scrollbar simplebar js -->
     <script src="../assets/js/scrollbar/simplebar.js"></script>
     <script src="../assets/js/scrollbar/custom.js"></script>
 
     <!-- Sidebar js -->
     <script src="../assets/js/config.js"></script>
-
-    <!-- customizer js -->
-    <script src="../assets/js/customizer.js"></script>
 
     <!-- Plugins js -->
     <script src="../assets/js/sidebar-menu.js"></script>
@@ -519,14 +526,17 @@
     <script src="../assets/js/jquery.dataTables.js"></script>
     <script src="../assets/js/custom-data-table.js"></script>
 
+    <!-- all checkbox select js -->
+    <script src="../assets/js/checkbox-all-check.js"></script>
+
     <!-- sidebar effect -->
     <script src="../assets/js/sidebareffect.js"></script>
 
     <!-- Theme js -->
     <script src="../assets/js/script.js"></script>
 
-    <!-- product.js  -->
-     <script src="../assets/js/custom/product.js"></script>
+    <!-- Orderlist js  -->
+     <script src="../assets/js/custom/order-list.js"></script>
 </body>
 
 </html>
