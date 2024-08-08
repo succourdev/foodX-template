@@ -12,7 +12,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Fastkart - Coupon</title>
+    <title>Fastkart - Order List</title>
 
     <!-- Google font-->
     <link
@@ -22,8 +22,8 @@
     <!-- Fontawesome css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/font-awesome.css">
 
-    <!-- Linear Icon css -->
-    <link rel="stylesheet" href="../assets/css/linearicon.css">
+    <!-- Linear Icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
     <!-- Themify icon css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
@@ -46,6 +46,8 @@
 
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="../assets/css/custom/add-order.css">
 </head>
 
 <body>
@@ -75,6 +77,7 @@
                     </div>
                 </div>
 
+               
                 <div class="nav-right col-6 pull-right right-header p-0">
                     <ul class="nav-menus">
                         <li>
@@ -269,23 +272,23 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="sale-list.html">Sale List</a>
+                                            <a href="../sale/sale-list.html">Sale List</a>
                                         </li>
 
                                         <li>
-                                            <a href="pos.html">POS</a>
+                                            <a href="../sale/pos.html">POS</a>
                                         </li>
                                         <li>
-                                            <a href="add-sell.html">Add sale</a>
+                                            <a href="../sale/add-sell.html">Add sale</a>
                                         </li>
                                         <li>
-                                            <a href="gift-card.html">Gift Card List</a>
+                                            <a href="../sale/gift-card.html">Gift Card List</a>
                                         </li>
                                         <li>
-                                            <a href="coupon-list.html">Coupon List</a>
+                                            <a href="../sale/coupon-list.html">Coupon List</a>
                                         </li>
                                         <li>
-                                            <a href="delivary-list.html">Delivery List</a>
+                                            <a href="../sale/delivary-list.html">Delivery List</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -317,7 +320,7 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="../accounting/assets.html">../assets List</a>
+                                            <a href="../accounting/assets.html">assets</a>
                                         </li>
                                         <li>
                                             <a href="../accounting/accounts.html">Accounting List</a>
@@ -343,7 +346,7 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="../order-list.html">Order List</a>
+                                            <a href="order-list.html">Order List</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -369,16 +372,16 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="coupon-list.html">Coupon List</a>
+                                            <a href="../sale/coupon-list.html">Coupon List</a>
                                         </li>
                                     </ul>
                                 </li>
 
                                 
                                 <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="../support-ticket.html">
+                                    <a class="sidebar-link sidebar-title link-nav" href="../reports.html">
                                         <i class="ri-file-chart-line"></i>
-                                        <span>suports</span>
+                                        <span>Reports</span>
                                     </a>
                                 </li>
 
@@ -407,177 +410,101 @@
             </div>
             <!-- Page Sidebar Ends-->
 
-            <!-- Container-fluid starts-->
+            <!-- Order section Start -->
             <div class="page-body">
-                
-                <!-- New Product Add Start -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-sm-8 col-md-12 m-auto">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="col-md-1 col-3">
-                                                <a href="create-coupon.html" class="btn btn-info">Add Coupon</a>
-                                            </div>
-
-                                            <div class="table-responsive mt-4">
-                                                <table id="coupon-table" class="table dataTable dtr-inline w-100" role="grid" aria-describedby="coupon-table_info" style="width: 0px;">
-                                                    <thead>
-                                                        <tr role="row">
-                                                            <th class="not-exported dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" data-col="0" aria-label="">
-                                                                <div class="checkbox">
-                                                                    <input type="checkbox" class="dt-checkboxes">
-                                                                    <label></label>
-                                                                </div>
-                                                            </th>
-                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Coupon Code: activate to sort column ascending">Coupon Code</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Type: activate to sort column ascending">Type</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Amount: activate to sort column ascending">Amount</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Minimum Amount: activate to sort column ascending">Minimum Amount</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Qty: activate to sort column ascending">Qty</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Available: activate to sort column ascending">Available</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Expired Date: activate to sort column ascending">Expired Date</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="coupon-table" rowspan="1" colspan="1" style="width: 0px;" aria-label="Created By: activate to sort column ascending">Created By</th>
-                                                            <th class="not-exported sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label="Action">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                
-                                                    <tbody>
-                                                                                    
-                                                        <tr data-id="3" role="row" class="odd">
-                                                            <td class="dt-checkboxes-cell" tabindex="0">
-                                                                <div class="checkbox">
-                                                                    <input type="checkbox" class="dt-checkboxes">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td>5%</td>
-                                                            <td><div class="badge badge-primary">percentage</div></td>
-                                                            <td>5</td>
-                                                            <td>N/A</td>
-                                                            <td>500</td>
-                                                            <td class="text-center"><div class="badge badge-success">492</div></td>
-                                                            <td><div class="badge badge-danger">31-12-2022</div></td>
-                                                            <td>riaz</td>
-                                                            <td>
-                                                                <div class="btn-group">
-                                                                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action
-                                                                        <span class="caret"></span>
-                                                                        <span class="sr-only">Toggle Dropdown</span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default" user="menu">
-                                                                        <li><button type="button" data-id="3" data-code="5%" data-type="percentage" data-amount="5" data-minimum_amount="0" data-quantity="500" data-expired_date="2022-12-31" class="edit-btn btn btn-link" data-toggle="modal" data-target="#editModal"><i class="dripicons-document-edit"></i> Edit</button></li>
-                                                                        <form method="POST" action="" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="E6lVWjGlxpQp55F3aHXc80CJ80swWhDA6ASi5PFi">
-                                                                        <li>
-                                                                            <button type="submit" class="btn btn-link" onclick="return confirmDelete()"><i class="dripicons-trash"></i> Delete</button>
-                                                                        </li>
-                                                                        </form>
-                                                                    </ul>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
+                <!-- Table Start -->
+                <div class="container">
+                    <h2 class="text-center mb-4">Add Order Details</h2>
+                    <div class="order-details">
+                        <form id="orderForm">
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="orderDate">Order Date:</label>
+                                    <input type="date" class="form-control" id="orderDate" name="orderDate" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="paymentType">Payment Type:</label>
+                                    <select class="form-control" id="paymentType" name="paymentType" required>
+                                        <option value="Cash">Cash</option>
+                                        <option value="Card">Card</option>
+                                        <option value="Online">Online</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="deliveryStatus">Delivery Status:</label>
+                                    <select class="form-control" id="deliveryStatus" name="deliveryStatus" required>
+                                        <option value="Pending">Pending</option>
+                                        <option value="Shipped">Shipped</option>
+                                        <option value="Delivered">Delivered</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="paidAmount">Paid Amount:</label>
+                                    <input type="number" class="form-control" id="paidAmount" name="paidAmount" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderProducts">Order Products:</label>
+                                <table class="table table-bordered" id="orderProductsTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Name</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th>Total</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control" name="productName[]"></td>
+                                            <td><input type="number" class="form-control" name="quantity[]"></td>
+                                            <td><input type="number" class="form-control" name="price[]"></td>
+                                            <td><span class="total"></span></td>
+                                            <td><button type="button" class="btn btn-danger remove-row">Remove</button></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3" class="text-right">Subtotal:</td>
+                                            <td colspan="2"><span id="subtotal"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="text-right">Total:</td>
+                                            <td colspan="2"><span id="total"></span></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <button type="button" class="btn btn-primary add-row">Add Product</button>
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
                     </div>
                 </div>
-                <!-- New Product Add End -->
-                <!-- Container-fluid Ends-->
+            
+                <!-- Table End -->
 
+                <!-- footer start-->
                 <div class="container-fluid">
-                    <!-- footer start-->
                     <footer class="footer">
                         <div class="row">
                             <div class="col-md-12 footer-copyright text-center">
-                                <p class="mb-0">Copyright 2024 © lasiof</p>
+                                <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
                             </div>
                         </div>
                     </footer>
                 </div>
             </div>
+            <!-- Order section End -->
         </div>
+        <!-- Page Body End-->
     </div>
-    <!-- page-wrapper End-->
+    <!-- page-wrapper End -->
 
-    <!-- Modal Start -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h5 class="modal-title" id="staticBackdropLabel">Logging Out</h5>
-                    <p>Are you sure you want to log out?</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                    <div class="button-box">
-                        <button type="button" class="btn btn--no" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="btn  btn--yes btn-primary">Yes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal End -->
-
-    <!-- Delete Modal Box Start -->
-    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header d-block text-center">
-                    <h5 class="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="remove-box">
-                        <p>The permission for the use/group, preview is inherited from the object, object will create a
-                            new permission for this object</p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-target="#exampleModalToggle2"
-                        data-bs-toggle="modal" data-bs-dismiss="modal">Yes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle2" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel12">Done!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="remove-box text-center">
-                        <div class="wrapper">
-                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                            </svg>
-                        </div>
-                        <h4 class="text-content">It's Removed.</h4>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Delete Modal Box End -->
+    
 
     <!-- latest js -->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
@@ -589,15 +516,15 @@
     <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
     <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
 
+    <!-- customizer js -->
+    <script src="../assets/js/customizer.js"></script>
+
     <!-- scrollbar simplebar js -->
     <script src="../assets/js/scrollbar/simplebar.js"></script>
     <script src="../assets/js/scrollbar/custom.js"></script>
 
     <!-- Sidebar js -->
     <script src="../assets/js/config.js"></script>
-
-    <!-- customizer js -->
-    <script src="../assets/js/customizer.js"></script>
 
     <!-- Plugins js -->
     <script src="../assets/js/sidebar-menu.js"></script>
@@ -608,11 +535,19 @@
     <script src="../assets/js/jquery.dataTables.js"></script>
     <script src="../assets/js/custom-data-table.js"></script>
 
+    <!-- all checkbox select js -->
+    <script src="../assets/js/checkbox-all-check.js"></script>
+
     <!-- sidebar effect -->
     <script src="../assets/js/sidebareffect.js"></script>
 
     <!-- Theme js -->
     <script src="../assets/js/script.js"></script>
+
+    <!-- Orderlist js  -->
+     <script src="../assets/js/custom/order-list.js"></script>
+
+     <script src="../assets/js/custom/add-order.js"></script>
 </body>
 
 </html>

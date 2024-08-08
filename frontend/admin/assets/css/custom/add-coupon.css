@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+  }
+
+  .btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+
+  .btn-primary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+  }
